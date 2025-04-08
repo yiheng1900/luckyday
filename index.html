@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>牛马每秒工资计算器</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    <div class="container">
+        <h1>牛马每秒工资计算器</h1>
+        <div id="clock-container" class="clock-container">
+            <div id="clock" class="clock">
+                <div class="clock-face" id="clock-face"></div>
+            </div>
+        </div>
+        <div class="input-section">
+            <label for="monthly-salary">请输入月基本工资（元）：</label>
+            <input type="number" id="monthly-salary" placeholder="例如：5000" min="0" step="0.01">
+            <div class="time-input">
+                <label for="start-time">选择工作开始时间：</label>
+                <input type="time" id="start-time">
+            </div>
+            <button id="calculate-btn">开始计算</button>
+        </div>
+        <div id="counters-container">
+            <!-- 计数器将在这里动态生成 -->
+        </div>
+        <p class="info">基于每月工作日21.75天，每天工作8小时计算</p>
+    </div>
+    <script src="audio.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
